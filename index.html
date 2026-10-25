@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Weather App</title>
+
+<!-- Connect CSS -->
+<link rel="stylesheet" href="style.css">
+
+<!-- Connect JavaScript -->
+<script src="script.js" defer></script>
+
+</head>
+
+<body>
+
+<main class="weather-card">
+
+    <h1>Weather App 🌤️</h1>
+
+    <p class="subtitle">
+        Discover the weather in your city
+    </p>
+
+    <!-- City Search Form -->
+    <form id="weather-form">
+
+        <input
+            type="text"
+            id="city-input"
+            placeholder="Enter city name..."
+            aria-label="Enter city name"
+            required
+        >
+
+        <button type="submit" id="search-button">
+            Search
+        </button>
+
+    </form>
+
+    <!-- Error and Loading Messages -->
+    <p id="message" role="status" aria-live="polite"></p>
+
+    <!-- Weather Information -->
+    <section id="weather-info" class="hidden">
+
+        <h2 id="city-name">City Name</h2>
+
+        <div id="weather-icon" class="weather-icon">
+            🌤️
+        </div>
+
+        <h3 id="temperature">--°C</h3>
+
+        <p id="condition">
+            Weather condition
+        </p>
+
+        <p id="feels-like">
+            Feels like: --°C
+        </p>
+
+        <!-- Humidity and Wind Speed -->
+        <div class="details">
+
+            <div class="detail-box">
+                <span>💧 Humidity</span>
+                <strong id="humidity">--%</strong>
+            </div>
+
+            <div class="detail-box">
+                <span>💨 Wind Speed</span>
+                <strong id="wind">-- km/h</strong>
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+        Made with ❤️ using HTML, CSS & JavaScript
+    </footer>
+
+</main>
+
+</body>
+</html>
